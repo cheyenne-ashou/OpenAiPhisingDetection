@@ -66,11 +66,13 @@ classifier.fit(X_train, y_train)
 logging.info("Classifier trained successfully.")
 
 # Save the trained model and the label encoder
-logging.info("Saving the trained model and label encoder...")
-with open('classifier.pkl', 'wb') as f:
-    pickle.dump(classifier, f)
+classifier_path = os.path.join('data', 'classifier.pkl')
+label_encoder_path = os.path.join('data', 'label_encoder.pkl')
 
-with open('label_encoder.pkl', 'wb') as f:
+logging.info("Saving the trained model and label encoder...")
+with open(classifier_path, 'wb') as f:
+    pickle.dump(classifier, f)
+with open(label_encoder_path, 'wb') as f:
     pickle.dump(label_encoder, f)
 logging.info("Model and label encoder saved.")
 
