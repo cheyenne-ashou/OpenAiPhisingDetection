@@ -23,4 +23,4 @@ The last message provides an example of the classifiers's innaccuracies. You can
 3. Active Learning
   - **Model Improvement:** Use active learning to focus on uncertain samples, label them, and improve the training set iteratively.
 
-ALthough I am not well-versed in Machine learning, these are simple ways to improve the accuracy of the classifier without going deep into Maachine Learning.
+Although I am not well-versed in Machine learning, these are simple ways to improve the accuracy of the classifier without going deep into Maachine Learning.
